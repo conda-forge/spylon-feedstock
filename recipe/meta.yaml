@@ -28,6 +28,7 @@ requirements:
     - python
     - findspark
     - pandas
+    - pyyaml
 
 test:
   imports:
