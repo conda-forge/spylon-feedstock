@@ -15,6 +15,9 @@ source:
 build:
   number: 0
   script: python setup.py install --single-version-externally-managed --record=record.txt
+  entry_points:
+    - pyspark_yarn_client_conda=spylon.spark.yarn_launcher:pyspark_conda_yarn_client
+    - pyspark_yarn_cluster_conda=spylon.spark.yarn_launcher:pyspark_conda_yarn_cluster
 
 requirements:
   build:
@@ -30,6 +33,7 @@ test:
   imports:
     - spylon
     - spylon.spark
+    - spylon.spark.yarn_launcher
 
 about:
   home: https://github.com/MaxPoint/spylon
