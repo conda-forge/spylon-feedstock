@@ -1,7 +1,7 @@
 {% set name = "spylon" %}
-{% set version = "0.2.9" %}
+{% set version = "0.2.10" %}
 {% set hashtype = "sha256" %}
-{% set hash = "60ba1e96d374d21bb3d6d2e14380c02d472ecfb5a43b2ee51e57bef96ef25ca0" %}
+{% set hash = "776643a622b85f6cca65f7e67c8517b8d1e39d540079c17c2a575c9df3dbdf58" %}
 
 package:
   name: {{ name }}
@@ -45,3 +45,4 @@ extra:
   recipe-maintainers:
     - mariusvniekerk
     - ericdill
+    - parente
